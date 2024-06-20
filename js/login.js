@@ -47,9 +47,19 @@ function logOut()
 
 function searchUser()
 {
-    var users = JSON.parse(localStorage.getItem('users'));
-
-    for (var i = 0; i < localStorage.length; i++)
+    var len;
+    if(localStorage.getItem('users') != null)
+    {
+        var users = JSON.parse(localStorage.getItem('users'));
+        len = users.length;
+    }
+    else
+    {
+        len = 0;
+    }
+    
+     
+    for (var i = 0; i < len; i++)
     {
         if (email.value == users[i].Email && password.value == users[i].Password)
         {
