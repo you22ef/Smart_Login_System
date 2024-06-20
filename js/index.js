@@ -55,7 +55,7 @@ function storeData()
         console.log(data);
         localStorage.setItem('users',JSON.stringify(data));
         clearForm();
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
     }
 
     

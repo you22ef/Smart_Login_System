@@ -72,7 +72,7 @@ function login()
         if(searchUser())
         {
             alert3.classList.add("d-none");
-            window.location.href = "../page.html";
+            window.location.href = "page.html";
             
 
         }
