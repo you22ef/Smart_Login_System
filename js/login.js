@@ -49,7 +49,7 @@ function searchUser()
 {
     var users = JSON.parse(localStorage.getItem('users'));
 
-    for (var i = 0; i < users.length; i++)
+    for (var i = 0; i < localStorage.length; i++)
     {
         if (email.value == users[i].Email && password.value == users[i].Password)
         {
