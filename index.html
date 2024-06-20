@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container px-5 pb-4">
+        <div class="title text-center pt-5">
+            <h1>Smart Login System</h1>
+        </div>
+        <div class="pt-4">
+            <div class="alert alert-danger al3 py-1 my-3 d-none"> Incorrect email or password </div>
+            <div class="mb-3">
+                <input type="email"  placeholder="Enter your email"  class="form-control bg-transparent" id="Email" aria-describedby="emailHelp">
+                <div class="alert alert-danger al1 py-1 d-none"> </div>
+            </div>
+            
+            <div class="i2">
+                <input type="password" placeholder="Enter your password" class="form-control bg-transparent" id="Password">
+                <div class="alert alert-danger al2 py-1 d-none">Invalid password! Password must be at least 8 characters long, include at least one lowercase letter, one uppercase letter, one digit, and one special character. </div>
+            </div>
+            <button type="submit" class="btn w-100 mb-4">Login</button>
+        </div>
+
+        <p class="text-white text-center">Don’t have an account? <a href="SignUp.html" class=" text-white">Sign Up</a></p>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script> 
+</body>
+
+</html>
